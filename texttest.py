@@ -4,4 +4,4 @@ End of line
 """
 
 """This is the 2nd time edition. 
-New line appeded for 2nd time."""
+New line appended for 2nd time."""
