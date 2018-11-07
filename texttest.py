@@ -26,3 +26,13 @@ print(name)
 print('This is Upper case of your name:%s' % name.upper())
 print('This is another case of your name in Uppercase:%s' % name)
 
+# exercise 2-6
+
+name_with_space = '  morris  \t'
+
+name = name_with_space.strip()
+
+print(name, len(name))
+
+num = 8
+print('This is my favourite number: %d' % num )
