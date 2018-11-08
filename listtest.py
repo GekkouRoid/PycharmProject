@@ -46,9 +46,9 @@ for p in people:
 
 # print('Only 2 tickets available!')
 #
-while len(people) > 2:
-    pend = people.pop()
-    print(pend + ', sorry that you cannot join the party.')
+# while len(people) > 2:
+#     pend = people.pop()
+#     print(pend + ', sorry that you cannot join the party.')
 
 print(people)
 
@@ -57,12 +57,8 @@ print(people)
 
 while len(people) >0 :
     people.pop()
-
+#
 print(people)
-
-
-
-
-
-
+#
+# print(people.__sizeof__())
 
