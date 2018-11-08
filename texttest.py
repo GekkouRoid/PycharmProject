@@ -38,3 +38,6 @@ print(name, len(name))
 
 num = 8
 print('This is my favourite number: %d' % num )
+
+
+# Add some more comment
