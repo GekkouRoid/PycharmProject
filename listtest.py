@@ -50,7 +50,7 @@ while len(people) > 2:
     pend = people.pop()
     print(pend + ', sorry that you cannot join the party.')
 
-print (people)
+print(people)
 
 # for p in people:
 #     people.remove(p)
