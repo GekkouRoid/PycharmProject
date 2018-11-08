@@ -26,6 +26,8 @@ print(name)
 print('This is Upper case of your name:%s' % name.upper())
 print('This is another case of your name in Uppercase:%s' % name)
 
+
+"""Some new comments"""
 # exercise 2-6
 
 name_with_space = '  morris  \t'
