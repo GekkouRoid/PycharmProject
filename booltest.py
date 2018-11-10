@@ -32,7 +32,7 @@ for new_user in new_users:
         if new_user.lower() == current_user.lower():
             print('user ' + new_user + ' exists!')
 
-numbers = list(range(1,11))
+numbers = list(range(1, 11))
 for number in numbers:
     if number == 1:
         print('It is 1st.')
@@ -41,6 +41,4 @@ for number in numbers:
     elif number == 3:
         print('It is 3rd.')
     else:
-        print('It is ' + str(number) +'th.')
-
-
+        print('It is ' + str(number) + 'th.')
