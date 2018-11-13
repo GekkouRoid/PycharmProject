@@ -21,14 +21,21 @@ for friend in friends:
 
 aliens = []
 for alien_number in range(30):
-    new_alien = {'color': 'green', 'speed': 'low', 'point': 5, }
+    new_alien = {'color': 'green', 'speed': 'low', 'points': 5, }
     aliens.append(new_alien)
 
-for i in range(3):
-    print(aliens[i])
+for alien in aliens[0:3]:
+    print(alien)
 print('...')
 print('The total number of the aliens is: ' + str(len(aliens)))
 
+for alien in aliens[0:3]:
+    alien['color'] = 'yellow'
+    alien['speed'] = 'medium'
+    alien['points'] = 10
+
+for alien in aliens[0:5]:
+    print(alien)
 
 # for name in favorite_languages.keys():
 #     print(name.title())
