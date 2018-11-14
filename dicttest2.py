@@ -20,4 +20,3 @@ for p in people:
         people[p].append(new_place)
     for place in people[p]:
         print('\t' + place)
-
