@@ -28,3 +28,4 @@ show_magicians(names)
 othernames = make_great(names)
 show_magicians(names)
 show_magicians(othernames)
+
