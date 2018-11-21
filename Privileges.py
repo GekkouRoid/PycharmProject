@@ -7,5 +7,3 @@ class Privileges:
 
     def describe_privileges(self):
         print(self.privileges)
-
-
