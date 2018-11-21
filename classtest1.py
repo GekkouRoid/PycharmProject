@@ -1,5 +1,5 @@
 # Exercise of 9-1
-class Restaurant():
+class Restaurant:
     """This is the comment of class Res"""
 
     def __init__(self, name, ctype):
