@@ -1,4 +1,4 @@
-#Exercise of 9-8
+#Exercise of 9-11
 
 
 from classtest2 import User
@@ -13,4 +13,7 @@ class Admin(User):
 
 admin1 = Admin('Mike', 'Carson')
 admin1.privilege.describe_privileges()
+admin1.increment_login_attempts()
+admin1.show_login_attempts()
+
 

@@ -13,6 +13,9 @@ class User:
     def reset_login_attempts(self):
         self.login_attempts = 0
 
+    def show_login_attempts(self):
+        print(self.login_attempts)
+
     def describe_user(self):
         username = self.get_user_name()
         user_message = 'This is the user\'s information:\n' + \
