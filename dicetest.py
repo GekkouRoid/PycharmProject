@@ -2,6 +2,7 @@
 
 import random
 
+
 class Dice:
     def __init__(self, sides=6):
         self.sides = sides
@@ -10,6 +11,7 @@ class Dice:
         x = random.randint(1, self.sides)
         # print(x)
         return x
+
 
 dice1 = Dice()
 dice1.roll_dice()
