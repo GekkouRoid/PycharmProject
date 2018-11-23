@@ -1,23 +1,24 @@
 # Exercise of 10.36
 
-filename = 'D:\Documents\PythonDocs\ehmatthes-pcc-f555082\chapter_10/\/alice.txt'
 
-
-def count_file_words(filename):
-    """To count how many words there are in the file"""
+def count_file_words(filename, one_string=''):
+    """To count how many words there are in the file; or,
+    if necessary, count how many times the one_string appears in the file.
+    returned result is a list"""
     try:
         with open(filename) as f_obj:
             contents = f_obj.read()
     except FileNotFoundError:
         print('File ' + filename + ' not found!')
     else:
-        words = contents.split()
-        num = len(words)
-        return num
+        if one_string:
+            return [contents.lower().count(one_string.lower()), len(contents.split())]
+        else:
+            return [len(contents.split()),]
 
 
 f_name = input('Please input your file name: ')
-n = count_file_words(f_name)
-if n:       # if file not exists, returned n will be None, so check it.
-    print(n)
+input_string = input('Please the string you like to find:')
+n = count_file_words(f_name, input_string)
+print(n)
 
