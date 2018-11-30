@@ -20,3 +20,7 @@ for p in people:
         people[p].append(new_place)
     for place in people[p]:
         print('\t' + place)
+
+# create a dict variable with fromkeys 'class method'
+dict1 = dict.fromkeys(places)
+print(dict1)
