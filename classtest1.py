@@ -1,6 +1,7 @@
 # Exercise of 9-1
 class Restaurant:
     """This is the comment of class Res"""
+    __cnum = 100
 
     def __init__(self, name, ctype):
         self.restaurant_name = name
@@ -28,6 +29,12 @@ class Restaurant:
         else:
             print('increment cannot be negative.')
 
+    def update_cnum(self):
+        self.__cnum += 1
+        print('cnum is: ', self.__cnum)
+
+
+
 
 my_res = Restaurant('ming', 'J')
 my_res.describe_restaurant()
@@ -39,5 +46,8 @@ my_res3 = Restaurant('Bo', 'Italy')
 my_res2.describe_restaurant()
 my_res3.describe_restaurant()
 my_res3.update_number(-7)
-my_res3.increment_number(-9)
+my_res3.increment_number(9)
 my_res3.describe_restaurant()
+
+my_res.update_cnum()
+# print(my_res.__cnum)       # wrong attribute access method

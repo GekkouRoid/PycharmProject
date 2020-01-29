@@ -1,8 +1,8 @@
-"""This is test file for list.
+"""This is test file1 for list.
 """
 
-cars = ['ww', 'subaru','honda','toyota']
-print('last car brand is % s.' % cars[-1])
+cars = ['ww', 'subaru', 'honda', 'toyota']
+print('last car brand is % s.' % cars[-1].title())
 
 # title() function is to capitalize the first char of string
 
@@ -15,9 +15,11 @@ for car in cars:
 
 # Exercise 3-3
 for car in cars:
-    print('I enjoy my car',car+'!')
+    print('I enjoy my car', car+'!')
 
 # delete one element from list
+print('the length is: ', cars.__len__())
+
 del cars[-1]
 print(cars)
 
