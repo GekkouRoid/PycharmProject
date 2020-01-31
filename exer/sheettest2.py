@@ -19,7 +19,7 @@ sheet = wb['Sheet1']
 # ce = sheet.cell(1, 1)
 # print(ce.value)
 for i in range(1, maxRow + 1):
-    for j in range(1, maxCol +1):
+    for j in range(1, maxCol + 1):
         pixelColor = img.getpixel((i - 1, j - 1))
         rgb = webcolors.rgb_to_hex(pixelColor)
         strrgb = str(rgb)
@@ -30,9 +30,6 @@ for i in range(1, maxRow + 1):
 
 wb.save('new1.xlsx')
 wb.close()
-
-
-
 
 
 

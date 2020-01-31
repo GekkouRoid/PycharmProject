@@ -31,13 +31,13 @@ class User:
         username = self.first_name + ' ' + self.last_name
         return username
 
+if __name__ == '__main__':
+    me = User('john', 'Smith')
+    me.describe_user()
+    me.greet_user()
+    me.increment_login_attempts()
+    me.increment_login_attempts()
+    print(me.login_attempts)
 
-me = User('john', 'Smith')
-me.describe_user()
-me.greet_user()
-me.increment_login_attempts()
-me.increment_login_attempts()
-print(me.login_attempts)
-
-me.reset_login_attempts()
-print(me.login_attempts)
+    me.reset_login_attempts()
+    print(me.login_attempts)
