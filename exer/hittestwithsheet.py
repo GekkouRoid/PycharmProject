@@ -58,3 +58,5 @@ sheet.add_chart(c1, 'B106')
 
 print(hit_rounds)
 wb.save('hitest.xlsx')
+wb.close()
+

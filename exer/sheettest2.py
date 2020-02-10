@@ -24,7 +24,7 @@ for i in range(1, maxRow + 1):
         rgb = webcolors.rgb_to_hex(pixelColor)
         strrgb = str(rgb)
         argbrgb = '00' + strrgb[1:]
-
+        print(argbrgb)
         sheet.cell(j, i).fill = PatternFill(fgColor=argbrgb, bgColor=argbrgb, fill_type="solid")
 
 
