@@ -5,6 +5,7 @@ import webcolors
 """
 This is to test the method to fill 
 the cells that one unit could move to.
+
 """
 
 draw_color = '006187b4'
