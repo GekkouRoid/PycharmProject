@@ -37,7 +37,7 @@ class Girl(Women):
         # self.__secret()  # 不能在子类中直接调用父类的私有方法
 
         # 可以通过调用父类的公有方法来简介调用父类的私有属性和方法
-        self.public()  # 运行结果：(公有：xiaohong 的年龄是 18  私有：xiaohong 的年龄是 18)
+        self.public()  # 运行结果：(公有： xiaohong 的年龄是18  私有：xiaohong 的年龄是 18)
         print("...")
 
 

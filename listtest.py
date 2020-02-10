@@ -43,24 +43,53 @@ people.insert(0,'p1new')
 people.insert(3, 'p3new')
 people.append('plast')
 
+print(people)
+
+people.__delitem__(0)
+
+print(people)
+
 for p in people:
     print(p + ', please enjoy party with us!')
 
-# print('Only 2 tickets available!')
-#
-# while len(people) > 2:
-#     pend = people.pop()
-#     print(pend + ', sorry that you cannot join the party.')
+print('Only 2 tickets available!')
+
+while len(people) > 2:
+    pend = people.pop()
+    print(pend + ', sorry that you cannot join the party.')
 
 print(people)
 
-# for p in people:
-#     people.remove(p)
-
-while len(people) >0 :
-    people.pop()
-#
+for pin in people:
+    people.remove(pin)
 print(people)
+"""究其原因，在删掉第一个值，也就是索引[0]后，索引为[1]的值索引变为了[0]，然后第二次删除是从索引[1]开始删除的，所以漏掉了一个值。
+
+如果要用remove函数删空整个List，正确的做法应该是
+
+list = ['Google', 'Runoob', 'Taobao', 'Baidu']
+for i in range(len(list)):
+    list.remove(list[0])
+print(list)
+————————————————
+"""
+"""
+import copy
+a = rang(30)
+b = copy.deepcopy(a)
+for i in a:
+    if i % 4 != 0:
+        b.remove(i)
+
+print(b)
+"""
 #
-# print(people.__sizeof__())
+# while len(people) > 0:
+#     people.pop()
+
+print(people)
+
+print(people.__sizeof__())
+print(len(people))
+
 

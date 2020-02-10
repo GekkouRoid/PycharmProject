@@ -10,3 +10,4 @@ def printStar(n):
 
 if __name__ == '__main__':
         printStar(10)
+
