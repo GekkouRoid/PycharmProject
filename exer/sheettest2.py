@@ -4,7 +4,7 @@ from PIL import Image
 import webcolors
 
 
-img = Image.open('mount.jpg')
+img = Image.open('Steves.jpg')
 maxRow = img.height
 maxCol = img.width
 if maxRow > 676:
